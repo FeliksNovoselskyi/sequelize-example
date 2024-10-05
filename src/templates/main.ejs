@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <p>brobrobro</p>
+
+    <% if (error) { %>
+        <p class="error-message"><%=error %></p>
+    <% } %>
+
+    <form action="/" method="post">
+        <input type="text" name="firstName" placeholder="First name">
+        <input type="text" name="lastName" placeholder="Last name">
+        
+        <button type="submit" name="action" value="create">Create</button>
+        <button type="submit" name="action" value="delete">Delete</button>
+    </form>
+</body>
+</html>
