@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <p>brobrobro</p>
+    <header>
+        <p>brobrobro</p>
 
-    <% if (error) { %>
-        <p class="error-message"><%=error %></p>
-    <% } %>
+        <a href="/">Main</a>
+        <a href="/user/">User</a>
+    </header>
 
-    <form action="/" method="post">
-        <input type="text" name="firstName" placeholder="First name">
-        <input type="text" name="lastName" placeholder="Last name">
-        
-        <button type="submit" name="action" value="create">Create</button>
-        <button type="submit" name="action" value="delete">Delete</button>
-    </form>
+    <main>
+        <% if (error) { %>
+            <p class="error-message"><%=error %></p>
+        <% } %>
+    
+        <form action="/" method="post">
+            <input type="text" name="firstName" placeholder="First name">
+            <input type="text" name="lastName" placeholder="Last name">
+            
+            <button type="submit" name="action" value="create">Create</button>
+            <button type="submit" name="action" value="delete">Delete</button>
+        </form>
+    </main>
 </body>
 </html>
