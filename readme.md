@@ -3,7 +3,7 @@ Sequelize ORM
 Small project for testing Sequelize ORM in NodeJS. Without using ES-modules system
 
 ## Install and run
-*Of course install NodeJS previously
+*Of course install [NodeJS](https://nodejs.org/en) previously
 
 1. Clone repository
 ```
@@ -21,4 +21,4 @@ npm install
 node src/server
 ```
 
-Enjoy exploring it!
+# Enjoy exploring it!
