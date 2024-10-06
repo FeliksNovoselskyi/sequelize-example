@@ -1,4 +1,4 @@
 node_modules/
 package-lock.json
-src/testdb.db
+testdb.db
 .DS_Store
